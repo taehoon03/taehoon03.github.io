@@ -15,34 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: recursive
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-
-      - name: Build
-        run: hugo --minify
-
-      - name: Upload artifact
-name: Deploy Hugo site to Pages
-
-on:
-  push:
-    branches: ["main"]
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
           submodules: true
           fetch-depth: 0
 
