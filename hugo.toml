@@ -1,5 +1,6 @@
 baseURL = "https://taehoon03.github.io/"
-languagecode = "ko-kr"
+languageCode = "ko-kr"
+defaultContentLanguage = "ko"
 title = "My-blog"
 theme = "terminal"
 paginate = 5
